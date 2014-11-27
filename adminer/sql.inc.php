@@ -175,6 +175,10 @@ if (!$error && $_POST) {
 		} elseif ($errors && $commands > 1) {
 			echo "<p class='error'>" . lang('Error in query') . ": " . implode("", $errors) . "\n";
 		}
+		else if (!$errors) {
+			$adminer->messageQuery($_POST["query"], time());
+			echo "<p class='message'>SQL: ".$_POST["query"]."</p>";
+		}
 		//! MS SQL - SET SHOWPLAN_ALL OFF
 
 	} else {

@@ -1,6 +1,6 @@
 <?php
 
-/** Log all queries to SQL file (manual queries through SQL command are not logged)
+/** Log all queries to SQL file
 * @link http://www.adminer.org/plugins/#use
 * @author Jakub Vrana, http://www.vrana.cz/
 * @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
